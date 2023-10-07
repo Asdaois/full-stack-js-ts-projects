@@ -1,0 +1,42 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@core": [
+        "libs/shared/core/src/index.ts"
+      ],
+      "@domain": [
+        "libs/shared/domain/src/index.ts"
+      ],
+      "@infra": [
+        "libs/shared/infra/src/index.ts"
+      ],
+      "@modules/forum": [
+        "libs/modules/forum/src/index.ts"
+      ],
+      "@modules/users": [
+        "libs/modules/users/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

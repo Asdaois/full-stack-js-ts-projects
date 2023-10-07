@@ -1,0 +1,34 @@
+{
+  "name": "shared-infra",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/infra/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/shared/infra",
+        "main": "libs/shared/infra/src/index.ts",
+        "tsConfig": "libs/shared/infra/tsconfig.lib.json",
+        "assets": [
+          "libs/shared/infra/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/infra/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
