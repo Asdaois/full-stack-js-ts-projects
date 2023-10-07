@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  background-color: #DDE0E3;
+}
+
+em,
+strong {
+  background-color: #B2D6FF;
+  display: inline;
+}
+
+h1 {
+  padding: 3.125rem;
+  border: 1px solid #2D6063;
+}
+
+p {
+  padding: 1.25rem 0.625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: 3.125rem;
+}
+
+strong {
+  margin: 3.125rem;
+}
+
+em {
+  /* padding: 3.125rem; */
+}
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 1.25rem;
+  text-align: center;
+  border: 0.125rem solid #5D6063;
+  border-radius: 5px;
+
+  width: 12.5rem;
+
+  margin: 1.25rem auto; /* only work if there exist width property */
+}
+
+body {
+  text-align: center;
+}

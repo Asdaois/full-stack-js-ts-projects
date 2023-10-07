@@ -1,0 +1,106 @@
+.synopsis {
+  color: #7E8184;
+  font-style: italic;
+}
+
+.synopsis em {
+  font-style: normal;
+}
+
+.button {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 1.25rem;
+  text-align: center;
+  border: 0.125rem solid #5D6063;
+  border-radius: 0.3125rem;
+
+  width: 12.5rem;
+  margin: 1.25rem auto;
+}
+
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 1.25rem;
+  text-align: center;
+  border: 0.125rem solid #5D6063;
+  border-radius: 0.3125rem;
+
+  width: 12.5rem;
+  margin: 1.25rem auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color : #FFF;
+  background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;
+}
+
+.page {
+  width: 37.5rem;
+  margin: 0 auto;
+}
+
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: rgb(28, 111, 136);
+  text-decoration: underline;
+}
+
+a:active {
+  color: red
+}
+
+a:visited:hover {
+  color: orange;
+}
+
+a:visited:active {
+  color: red;
+}
+
+p:last-of-type {
+  margin-bottom: 3.125rem;
+}
+
+#button-2 {
+  color: #5D6063;
+}
