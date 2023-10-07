@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: arp
+    networks:
+      - arp
+    volumes:
+      - /var/lib/postgresql/data
+
+networks:
+  arp:

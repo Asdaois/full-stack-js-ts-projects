@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Rango {
+  id          Int           @id @default(autoincrement())
+  prefijo     String
+  desde       Int
+  hasta       Int
+  Dispositivo Dispositivo[]
+}
+
+model Dispositivo {
+  mac         String @id @unique
+  name        String
+  descripcion String
+  rango       Rango? @relation(fields: [rangoId], references: [id])
+  rangoId     Int?
+}
+
+model User {
+  id              Int     @id @default(autoincrement())
+  ficha           Int     @unique
+  usuario         String  @unique
+  nombre          String
+  password        String
+  esAdministrador Boolean
+  fmoEquipo       Int?
+}
