@@ -1,0 +1,27 @@
+{
+  "name": "odin-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy:client": "cd client && npm run deploy",
+    "deploy:server": "heroku git:remote -a odin-book-server && git subtree push --prefix server heroku master",
+    "deploy": "npm run deploy:client && npm run deploy:server", 
+    "dev": "concurrently npm:dev:*",
+    "dev:client": "cd client && npm run start",
+    "dev:server": "cd server && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asdaois/odin-book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asdaois/odin-book/issues"
+  },
+  "homepage": "https://github.com/Asdaois/odin-book#readme",
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
