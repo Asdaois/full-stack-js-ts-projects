@@ -1,0 +1,22 @@
+{
+  "version": "0.2",
+  "ignorePaths": [
+    "server-dummy/db.json"
+  ],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "Arto",
+    "encrytation",
+    "latlng",
+    "linebreak",
+    "loggin",
+    "predeploy",
+    "releveler",
+    "resave",
+    "tcaer",
+    "Togglable"
+  ],
+  "ignoreWords": [],
+  "import": []
+}

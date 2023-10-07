@@ -1,0 +1,23 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true
+  },
+  "conventionalCommits.scopes": [
+    "axios",
+    "notesApi",
+    "phonebook"
+  ],
+  "typescript.validate.enable": false,
+  /*
+  "editor.defaultFormatter": "numso.prettier-standard-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable"
+  */
+
+}

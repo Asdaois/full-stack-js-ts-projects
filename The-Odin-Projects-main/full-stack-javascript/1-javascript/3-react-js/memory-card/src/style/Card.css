@@ -1,0 +1,21 @@
+.cardImg {
+  height: 100px;
+  width: 133px;
+  margin: auto;
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  background-color: #888;
+  color: #eee;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.cardName {
+  font-size: 10px;
+  color: #222;
+  font-weight: bolder;
+}

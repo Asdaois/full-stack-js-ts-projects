@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="active-winner-display" id="display-winner">
+      <div id="winner-message">
+        <h2>The winner is:</h2>
+        <h3>Tie</h3>
+      </div>
+      <div class="d-piece xo"></div>
+    </div>
+    <main>
+      <div class="player" id="player1">
+        <input
+          type="text"
+          name="player1-name"
+          id="player1-name"
+          placeholder="Input a name, Player1"
+          maxlength="12"
+        />
+        <div class="d-piece x"></div>
+      </div>
+      <div class="center">
+        <div class="title"><h1>Tic Tac Toe</h1></div>
+        <div class="display-container">
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+          <div class="pieces"></div>
+        </div>
+        <input type="button" value="Start" class="btn" id="start-button" />
+        <input type="button" value="Reset" class="btn" id="reset-button" />
+        <div class="display-result"></div>
+      </div>
+      <div class="player" id="player2">
+        <input
+          type="text"
+          name="player2-name"
+          id="player2-name"
+          placeholder="Input a name, Player2"
+          maxlength="12"
+        />
+        <div class="d-piece o"></div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

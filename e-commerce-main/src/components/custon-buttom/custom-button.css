@@ -1,0 +1,4 @@
+.custom-button {
+  @apply min-w-166px w-auto h-12 tracking-wide leading-10 py-0 px-9 text-base bg-black text-white uppercase font-bold border border-transparent border-solid cursor-pointer block;
+  @apply hover:bg-white hover:text-black hover:border-subColor-900;
+}

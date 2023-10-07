@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  each message in messages
+    h2= message.messageText 
+    p= message.user
+    - const date = new Date(message.added);
+    p Added: #{date.toGMTString()}

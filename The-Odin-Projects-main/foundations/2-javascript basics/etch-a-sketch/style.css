@@ -1,0 +1,96 @@
+body {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+  width: 80%;
+}
+.flex {
+  display: flex;
+}
+#viewport {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+  grid-template-areas: "header container" "control container" "control container";
+  justify-items: center;
+  align-items: center;
+  column-gap: 16px;
+}
+header {
+  grid-area: header;
+  text-align: justify;
+  font-size: 20px;
+}
+header > h1 {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.86);
+}
+#control-panel {
+  grid-area: control;
+  content: " ";
+  background-color: #ccc;
+  width: auto;
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.86);
+  justify-self: stretch;
+  align-self: start;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#control-panel > h4 {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+#container {
+  grid-area: container;
+  content: " ";
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  background-color: black;
+  display: grid;
+  column-gap: 1px;
+  row-gap: 1px;
+  border: solid 1px;
+  justify-items: stretch;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.86);
+}
+.square {
+  display: block;
+  content: " ";
+  background-color: white;
+}
+.button {
+  width: 80px;
+  border-radius: 25px;
+}
+.button:focus {
+  outline: none;
+}
+.range-number-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+input:focus {
+  outline: none;
+}
+input {
+  text-align: center;
+}
+label {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+}
+.pencil {
+  margin: 2px;
+}
+.pencil-selected {
+  background-color: darkgrey;
+}

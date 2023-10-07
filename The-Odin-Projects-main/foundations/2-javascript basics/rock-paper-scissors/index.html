@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="plays-player-container" id="player">
+        <div class="played-img adjust-player-img rock" id="rock"></div>
+        <div class="played-img adjust-player-img paper" id="paper"></div>
+        <div class="played-img adjust-player-img scissors" id="scissors"></div>
+      </div>
+      <div class="show-results-container" id="HUD">
+        <div class="title"><h4>ROCK PAPER SCISSORS</h4></div>
+        <div class="count" id="UI-messages">
+          <p id="mes-1">Press the player icon to play</p>
+          <p id="mes-2"></p>
+        </div>
+        <div class="results">
+          <div class="count" id="count-player">0</div>
+          <div class="count">-</div>
+          <div class="count" id="count-enemy">0</div>
+        </div>
+      </div>
+      <div id="computer"><div class="computer-img"></div></div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

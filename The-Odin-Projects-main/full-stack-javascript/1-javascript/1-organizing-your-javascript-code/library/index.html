@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="control-active">
+      <div class="bet-h2">
+        <h2>Library control</h2>
+      </div>
+      <div class="control-options" id="create-book"><p>Add new book</p></div>
+      <div class="control-options" id="safe-localstorage">
+        <p>Safe to localstorage</p>
+      </div>
+      <div class="control-options" id="safe-cloud">
+        <p class="">Safe to cloud</p>
+      </div>
+    </nav>
+    <div class="book input-book-hide" id="input-book">
+      <form id="add-form" action="">
+        <h3 class="booktitle">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" maxlength="60" required />
+        </h3>
+        <h4 class="bookauthor">
+          <label for="author">Author:</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            maxlength="60"
+            required
+          />
+        </h4>
+        <hr />
+        <div class="flex">
+          <label for="review" id="review-label">Review:</label>
+          <textarea
+            name=""
+            id="review"
+            cols="30"
+            rows="6"
+            maxlength="180"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" value="Add to library" id="button-add" />
+      </form>
+    </div>
+
+    <div id="main">
+      <div id="library"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

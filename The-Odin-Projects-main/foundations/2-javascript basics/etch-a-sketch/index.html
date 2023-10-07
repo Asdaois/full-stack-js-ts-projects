@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="viewport">
+      <header><h1>Etch a Sketch</h1></header>
+      <div id="control-panel">
+        <h4>Control Panel</h4>
+        <input type="button" value="Reset" class="button" id="reset" />
+        <hr />
+        <label for="">Type of pencil</label>
+        <div class="flex">
+          <input
+            type="button"
+            value="Ink"
+            class="button pencil pencil-selected"
+            id="ink-button"
+          />
+          <input
+            type="button"
+            value="Rainbow"
+            class="button pencil"
+            id="rainbow-button"
+          />
+        </div>
+        <hr />
+        <label for="num-col">Number of columns</label>
+        <div class="flex">
+          <input
+            type="range"
+            id="num-col-range"
+            name="num-col"
+            min="1"
+            max="100"
+            value="16"
+          />
+          <input
+            type="number"
+            name="num-col"
+            id="num-col-number"
+            min="1"
+            max="100"
+            value="16"
+          />
+        </div>
+
+        <label for="num-row">Number of rows</label>
+        <div class="flex">
+          <input
+            type="range"
+            id="num-row-range"
+            name="num-row"
+            min="1"
+            max="100"
+            value="16"
+          />
+          <input
+            type="number"
+            name="num-row"
+            id="num-row-number"
+            min="1"
+            max="100"
+            value="16"
+          />
+        </div>
+        <input class="button" type="button" value="Apply" id="apply" />
+      </div>
+      <div id="container"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

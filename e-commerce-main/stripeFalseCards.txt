@@ -1,0 +1,7 @@
+4242424242424242 01/20 123 -> Success
+4000000000009995 -> Failed
+4000002500003155 -> Requires Authentication
+
+-> Production heroku
+heroku create <project-name> --buildpack https://github.com/mars/create-react-app-buildpack.git
+$ git push heroku master

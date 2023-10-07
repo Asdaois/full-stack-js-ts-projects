@@ -1,0 +1,26 @@
+.wrapper {
+  background-color: #33b;
+  height: 400px;
+  width: 400px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.wrapper > img {
+  position: relative;
+}
+
+.imageMap {
+  display: grid;
+  grid-template-columns: repeat(40, auto);
+  grid-template-rows: repeat(40, auto);
+}
+
+.imageCell {
+  background-color: #33b;
+  opacity: 0.1;
+}
+
+.hide {
+  display: none;
+}

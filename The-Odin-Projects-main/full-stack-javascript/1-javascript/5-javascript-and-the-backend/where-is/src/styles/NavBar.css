@@ -1,0 +1,30 @@
+.NavBar {
+  display: flex;
+}
+
+.NavBar-link {
+  display: block;
+  background-color: #ccc;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.NavBar-link:link,
+.NavBar-link:visited {
+  color: #111;
+}
+
+/* mouse over link */
+.NavBar-link:hover {
+  color: #666;
+}
+
+/* selected link */
+.NavBar-link:active {
+  color: #222;
+}
+
+.NavBar-active {
+  background-color: #666;
+  color: #ccc !important;
+}

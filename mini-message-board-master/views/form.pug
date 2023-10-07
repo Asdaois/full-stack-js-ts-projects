@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content 
+  h2= title
+  form(action="/new", method="post") 
+    label(for="user") Author name 
+    input#user(type="text", name="user")
+    label(for="message_text") Message text
+    input#message_text(type="text", name="messageText")
+    button(type="submit") Add new message  

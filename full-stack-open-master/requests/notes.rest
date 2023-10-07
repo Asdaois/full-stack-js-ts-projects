@@ -1,0 +1,32 @@
+@URI = http://localhost:3001/api/notes
+@TYPE_JSON = Content-Type: application/json
+
+### Get all notes
+GET {{URI}} HTTP/1.1
+{{TYPE_JSON}}
+
+### Get one
+GET {{URI}}/5c41c90e84d891c15dfa3431 HTTP/1.1
+{{TYPE_JSON}}
+
+### Delete one
+DELETE {{URI}}/61db7749357b27744758c4ce HTTP/1.1
+{{TYPE_JSON}}
+
+### Update one
+PUT {{URI}}/61db74fa0c4808ba97f7760a HTTP/1.1
+{{TYPE_JSON}}
+
+{
+  "content": "Godot is the best Game engine",
+  "important": "true"
+}
+
+### Create one
+POST {{URI}} HTTP/1.1
+{{TYPE_JSON}}
+
+{
+  "content": "hola server",
+  "important": "false"
+}

@@ -1,0 +1,19 @@
+body {
+  background-color: #eee;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.App-title {
+  margin: 0;
+}

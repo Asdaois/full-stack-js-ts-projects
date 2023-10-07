@@ -1,0 +1,20 @@
+@hostname = http://localhost:3000/api
+@database = rentals
+
+###
+GET {{hostname}}/{{database}} HTTP/1.1
+
+###
+
+POST {{hostname}}/{{database}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "user":"61a767600a94f84c14ac6bea",
+  "machinery_rented": [
+    "61a59296abea3e380995334d",
+    "61a765fa0a94f84c14ac6bde"
+    ],
+  "init_date": "1638408919096"
+}
+

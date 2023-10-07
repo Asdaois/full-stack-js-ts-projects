@@ -1,0 +1,5 @@
+@hostname = http://localhost:3000/api
+@database = machine-types
+
+###
+GET {{hostname}}/{{database}} HTTP/1.1

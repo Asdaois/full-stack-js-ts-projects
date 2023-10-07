@@ -1,0 +1,36 @@
+@URI = http://localhost:3001/api/phonebook
+@TYPE_JSON = Content-Type: application/json
+
+### Get all notes
+GET {{URI}}/persons HTTP/1.1
+{{TYPE_JSON}}
+
+### Get info
+GET {{URI}}/info HTTP/1.1
+{{TYPE_JSON}}
+
+### Get one
+GET {{URI}}/persons/61db7fd3c572011bef0dd62a HTTP/1.1
+{{TYPE_JSON}}
+
+### Delete one
+DELETE {{URI}}/persons/61db7fd3c572011bef0dd62a HTTP/1.1
+{{TYPE_JSON}}
+
+### Create one
+POST {{URI}}/persons HTTP/1.1
+{{TYPE_JSON}}
+
+{
+  "name": "Jose Martinez",
+  "number": "414005024"
+}
+
+### BAD create 
+POST {{URI}}/persons HTTP/1.1
+{{TYPE_JSON}}
+
+{
+  # "name": "Jose Guevara"
+  # "number": "456873"
+}

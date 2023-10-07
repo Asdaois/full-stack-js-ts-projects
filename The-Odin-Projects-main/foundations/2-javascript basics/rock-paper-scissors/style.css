@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.87);
+  padding: 40px;
+}
+
+.plays-player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  width: 150px;
+  height: 400px;
+  margin: auto;
+  background-color: rgba(69, 69, 200, 0.89);
+  border-radius: 25%;
+}
+.played-img {
+  content: " ";
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: auto;
+}
+.show-results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: auto 10%;
+  /*background-color: violet;*/
+  flex-grow: 3;
+}
+.title,
+.winner-img,
+.results {
+  content: " ";
+  display: block;
+  height: 100px;
+  /*background-color: peru; */
+  text-align: center;
+  line-height: 20px;
+  margin: 10% auto;
+}
+
+.rock {
+  background-image: url(resources/rock.png);
+}
+.paper {
+  background-image: url(resources/paper.png);
+}
+.scissors {
+  background-image: url(resources/scissors.png);
+}
+.adjust-player-img {
+  background-size: cover;
+  border-radius: 20px;
+  border: solid 4px;
+  transition: all 0.7s ease;
+}
+.adjust-player-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.87);
+}
+#mes-1,
+#mes-2 {
+  display: block;
+  line-height: 35px;
+}
+.title {
+  color: grey;
+  font-size: 40px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.87);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#player,
+#computer {
+  flex-grow: 2;
+}
+#computer {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+}
+.computer-img {
+  content: " ";
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  background-color: tan;
+  background-image: url(computer.png);
+  border-radius: 25%;
+  border-width: 2px;
+  background-size: cover;
+}
+#UI-messages {
+  height: 200px;
+  width: 400px;
+  margin: auto;
+  font-size: 40px;
+  word-wrap: word;
+  text-align: center;
+}
+.animationChange {
+  animation: changeName 0.2s;
+}
+@keyframes changeName {
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.count {
+  padding: 4px;
+  font-size: 60px;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "full-stack-open",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm install && npm run start",
+    "dev": "concurrently npm:dev:* -c \"blue,green\"",
+    "dev:client": "cd client && npm run start",
+    "dev:server": "cd server && npm run dev",
+    "build:ui": "rm -rf server/build && cd ./client && npm run build ",
+    "predeploy": "npm run build:ui && git add . && git commit -m deploy",
+    "logs:prod": "heroku logs --tail",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asdaois/full-stack-open.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asdaois/full-stack-open/issues"
+  },
+  "homepage": "https://github.com/Asdaois/full-stack-open#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "eslint": "^8.6.0",
+    "jest": "^27.4.7"
+  }
+}

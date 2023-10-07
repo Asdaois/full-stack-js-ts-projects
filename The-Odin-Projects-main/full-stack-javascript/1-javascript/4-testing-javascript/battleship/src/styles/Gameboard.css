@@ -1,0 +1,20 @@
+.cells-container {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  grid-gap: 2px;
+  border: 5px solid #222;
+  align-items: stretch;
+}
+
+.cell {
+  background-color: #bbb;
+}
+
+.cell:hover {
+  opacity: 0.4;
+}
+
+.posible {
+  background-color: #383;
+}
